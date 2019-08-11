@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="img/gateway.ico" type="image/x-icon">
+        <link rel="icon" href="img/gateway.ico" type="image/icon">
+        <link rel="stylesheet" href="css/materialize.css">
+         <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import Font Awesome Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Courses | Gateway Computers</title>
+        <style>
+          header{
+            background-image: url(img/class.jpg);
+            background-position: center;
+            background-size: cover;
+            min-height: 700px;
+           
+            }
+            @media screen and (max-width: 700px){
+                header{
+                min-height: 700px;
+                }
+            }
+            input:not([type]):focus:not([readonly]),
+            input[type=text]:not(.browser-default):focus:not([readonly]),
+            input[type=password]:not(.browser-default):focus:not([readonly]),
+            input[type=email]:not(.browser-default):focus:not([readonly]),
+            input[type=url]:not(.browser-default):focus:not([readonly]),
+            input[type=time]:not(.browser-default):focus:not([readonly]),
+            input[type=date]:not(.browser-default):focus:not([readonly]),
+            input[type=datetime]:not(.browser-default):focus:not([readonly]),
+            input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+            input[type=tel]:not(.browser-default):focus:not([readonly]),
+            input[type=number]:not(.browser-default):focus:not([readonly]),
+            input[type=search]:not(.browser-default):focus:not([readonly]),
+            textarea.materialize-textarea:focus:not([readonly]) {
+            border-bottom: 1px solid #1b5e20;
+            -webkit-box-shadow: 0 1px 0 0 #1b5e20;
+                    box-shadow: 0 1px 0 0 #1b5e20;
+            }
+            .select-wrapper input.select-dropdown:focus {
+            border-bottom: 1px solid #1b5e20;
+            }
+            .dropdown-content li > a, .dropdown-content li > span {
+            font-size: 16px;
+            color: #1b5e20;
+            display: block;
+            line-height: 22px;
+            padding: 14px 16px;
+            }
+            [type="checkbox"] + span:not(.lever):before,
+            [type="checkbox"]:not(.filled-in) + span:not(.lever):after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            z-index: 0;
+            border: 2px solid #1b5e20;
+            border-radius: 1px;
+            margin-top: 3px;
+            -webkit-transition: .2s;
+            transition: .2s;
+            }
+            [type="checkbox"]:checked + span:not(.lever):before {
+            top: -4px;
+            left: -5px;
+            width: 12px;
+            height: 22px;
+            border-top: 2px solid transparent;
+            border-left: 2px solid transparent;
+            border-right: 2px solid #1b5e20;
+            border-bottom: 2px solid #1b5e20;
+            -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+            }
+             /* label color */
+             .input-field label {
+                color:#1b5e20;
+            }
+            /* label focus color */
+            .input-field input[type=text]:focus + label {
+                color:#1b5e20 ;
+            }
+            /* label underline focus color */
+            .input-field input[type=text]:focus {
+                border-bottom: 1px solid #1b5e20;
+                box-shadow: 0 1px 0 0 #1b5e20;
+            }
+            /* icon prefix focus color */
+            .input-field .prefix.active {
+                color:#1b5e20 ;
+            }
+            td{
+                color: #1b5e20;
+            }
+            header nav{
+            z-index: 2;
+            position: fixed;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <!--header/navbar-->
+        <header>
+            <nav class="nav-wrapper white">
+                <div class="container">
+                    <a href="index.html" class="brand-logo green-text text-darken-4">
+                        <img src="img/logo_green.png" alt="gateway logo" style="width: 250px"> 
+                    </a>
+                    <a href="" class="sidenav-trigger" data-target="mobile-tab">
+                            <i class="material-icons green-text text-darken-4">menu</i>
+                        </a>
+                    <ul class="hide-on-med-and-down right">
+                        <li><a href="index.html#welcome" class="green-text text-darken-4 ">Home</a></li>
+                        <li><a href="index.html#centers" class="green-text text-darken-4">Centers</a></li>
+                        <li><a href="#courses" class="green-text text-darken-4">Courses</a></li>
+                        <li><a href="./summer.html" target="blank" class="green-text text-darken-4">Summer ICT Training</a></li>
+                        <li><a href="./register.html" target="blank" class="green-text text-darken-4">Register</a></li>
+                        <li><a href="index.html#contact" class="green-text text-darken-4">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+                <div class="container">
+                    <ul class="sidenav striped" id="mobile-tab">
+                        <li><a href="index.html#welcome" class="green-text text-darken-4 ">Home</a></li>
+                        <li><a href="index.html#centers" class="green-text text-darken-4">Centers</a></li>
+                        <li><a href="#courses" class="green-text text-darken-4">Courses</a></li>
+                        <li><a href="./summer.html" target="blank" class="green-text text-darken-4">Summer ICT Training</a></li>
+                        <li><a href="./register.html" target="blank" class="green-text text-darken-4">Register</a></li>
+                        <li><a href="index.html#contact" class="green-text text-darken-4">Contact</a></li>
+                        </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--Welcome-->
+        <section class="section container scrollspy" id="courses">
+            <h3 class="green-text text-darken-4">Our Courses</h3>
+            <p class="grey-text text-darken-3" style="font-size: 20px; text-align: justify">Below is the detailed list of the courses we offer to our propsective clients, both organisations and individuals. Contact us for more information. </p>
+        </section>
+
+        <!--Courses-->
+       <div class="container">
+            <table class="centered striped ">
+                <thead style="font-size: 16px">
+                    <tr class="green-text text-darken-4">
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Course Details</th>
+                        <th>Course Duration</th>
+                    </tr>
+                </thead>
+                <tbody style="font-size: 18px">
+                    <tr class="hoverable">
+                        <td style="font-weight: bold">CICT</td>
+                        <td>Certificate in Information and Communication Technology</td>
+                        <td>
+                            <ol class="left-align" type="1">
+                                    <li>Microsoft Word</li>
+                                    <li>Microsoft Excel</li>
+                                    <li>Microsoft Access</li>
+                                    <li>Microsoft PowerPoint</li>
+                                    <li>Computer Fundamentals</li>
+                                    <li>Internet/Social Media Basics</li>                                
+                            </ol>
+                        <td>8 Weeks</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td style="font-weight: bold">DIT</td>
+                        <td>Diploma in Information Technology</td>
+                        <td>
+                            <ol class="left-align" type="1">
+                                    <li>CICT Courses</li>
+                                    <li>Diploma Courses</li>                                
+                            </ol>
+                        <td>8 Weeks</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td style="font-weight: bold">DCA</td>
+                        <td>Diploma in Computer Accounting</td>
+                        <td>
+                            <ol class="left-align" type="1">
+                                    <li>CICT Courses</li>
+                                    <li>Peachtree Accounting</li>
+                                    <li>SAGE50</li>                               
+                            </ol>
+                        <td>12 Weeks</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td style="font-weight: bold">CDP</td>
+                        <td>Certificate in Desktop Publishing</td>
+                        <td>
+                            <ol class="left-align" type="1">
+                                    <li>CorelDraw</li>
+                                    <li>Adobe Illustrator</li>
+                                    <li>Microsoft Publisher</li>                                
+                            </ol>
+                        <td>4 Weeks</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td style="font-weight: bold">DDIT</td>
+                        <td>Diploma in Desktop Publishing and Information Technology</td>
+                        <td>
+                            <ol class="left-align" type="1">
+                                    <li>CICT Courses</li>
+                                    <li>CDP Courses</li>
+                                    <li>Diploma Certification</li>                                
+                            </ol>
+                        <td>4 Months</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td style="font-weight: bold">DCET</td>
+                        <td>Diploma in Computer Engineering Technology</td>
+                        <td>
+                            <ol class="left-align" type="1">
+                                    <li>CICT Courses</li>
+                                    <li>Hardware/Software Maintenance</li>
+                                    <li>Hardware/Software Installation</li>                                
+                                    <li>Computer Repairs</li>                                
+                                    <li>CCNA Networking</li>                                
+                            </ol>
+                        <td>4 Months</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td style="font-weight: bold">DDP</td>
+                        <td>Diploma in Desktop Programming</td>
+                        <td>
+                            <ol class="left-align" type="1">
+                                    <li>Java</li>
+                                    <li>Visual Studio</li>
+                                    <li>Visual Basic</li>                                
+                                    <li>C+</li>                                
+                                    <li>C++</li>                                
+                                    <li>Python</li>                                
+                            </ol>
+                        <td>4 Weeks</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td style="font-weight: bold">DWP</td>
+                        <td>Diploma in Web Programming</td>
+                        <td>
+                            <ol class="left-align" type="1">
+                                    <li>html</li>
+                                    <li>PHP</li>
+                                    <li>CSS</li>                                
+                                    <li>SQL</li>                                
+                                    <li>REACT</li>                                
+                                    <li>WordPress</li>                                
+                            </ol>
+                        <td>4 Weeks</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td style="font-weight: bold">DPM</td>
+                        <td>Diploma in Computer Statistics</td>
+                        <td>
+                            <ol class="left-align" type="1">
+                                    <li>S.P.S.S.</li>
+                                    <li>Diploma Certification</li>                                
+                            </ol>
+                        <td>4 Weeks</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td style="font-weight: bold">DCAT</td>
+                        <td>Diploma in Computer Architecture</td>
+                        <td>
+                            <ol class="left-align" type="1">
+                                    <li>AUTOCAD</li>
+                                    <li>ArchiCAD</li>                                
+                                    <li>Revit</li>                                
+                            </ol>
+                        <td>4 Weeks</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td style="font-weight: bold">AEX</td>
+                        <td>Advanced Microsoft Excel</td>
+                        <td>
+                            <ol class="left-align" type="1">
+                                    <li>Microsoft Excel</li>
+                                    <li>Diploma Certification</li>                               
+                            </ol>
+                        <td>2 Weeks</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td style="font-weight: bold">CVE</td>
+                        <td>Certificate in Video Editing</td>
+                        <td>
+                            <ol class="left-align" type="1">
+                                    <li>Adobe Premiere Pro</li>
+                                    <li>Movavi Video Editor</li>                               
+                            </ol>
+                        <td>2 Weeks</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td style="font-weight: bold">DVE</td>
+                        <td>Diploma in Video Editing</td>
+                        <td>
+                            <ol class="left-align" type="1">
+                                    <li>Adobe Premiere Pro</li>
+                                    <li>Movavi Video Editor</li>                               
+                            </ol>
+                        <td>2 Weeks</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td style="font-weight: bold">CPE</td>
+                        <td>Certificate in Photo Editing</td>
+                        <td>
+                            <ol class="left-align" type="1">
+                                    <li>Adobe Photoshop</li>
+                                    <li>Adobe Lightroom</li>                               
+                            </ol>
+                        <td>2 Weeks</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td style="font-weight: bold">DPE</td>
+                        <td>Diploma in Photo Editing</td>
+                        <td>
+                            <ol class="left-align" type="1">
+                                    <li>Adobe Photoshop</li>
+                                    <li>Adobe Lightroom</li>                               
+                            </ol>
+                        <td>2 Weeks</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <div class="container center-align"> <a href="/docs/gateway_courses.pdf" target="_blank" class="btn-large green darken-4">Download As PDF</a>
+                <a href="./register.html" target="_blank" class="btn-large green darken-4">REGISTER NOW!</a>
+            </div>
+            <br>
+            <br>
+        </div>
+
+        <!--Footer-->
+        <footer class="page-footer green darken-4" id="footer">
+            <div class="container">
+                <div class="row">
+                        <div class="col s12 l4">
+                        <h5 class="white-text text-darken-4">About Us</h5>
+                            <p class="white-text text-darken-4">Gateway Computers is a training institution that specializes in qualitative and comprehensive ICT Training, 
+                                enhancing the computer proficiency of individuals and organizations in Nigeria. <br><br>
+                            <a href="register.html" href="blank" class="btn white green-text text-darken-4 center">START LEARNING</a>
+                            </p>
+                    </div>
+                    <div class="col s12 l3 push-l1">
+                        <h5 class="white-text text-lighten-3">Site Navigation</h5>
+                            <ul>
+                            <li><a href="index.html" class="white-text">Home</a></li>
+                            <li><a href="register.html" class="white-text">Register</a></li>
+                            <li><a href="courses.html" class="white-text">Courses</a></li>
+                            <li><a href="index.html#centers" class="white-text">Centers</a></li>
+                            <li><a href="summer.html" target="blank" class="white-text">Summer ICT Training</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s12 l3 push-l2">
+                        <h5 class="grey-text text-lighten-3">Social Links</h5>
+                            <a href="www.facebook.com/gatewayabuja" target="blank">
+                                <i class="fa fa-facebook" style="font-size: 48px; color:white; padding-right: 15px"></i>
+                            </a>
+                            <a href="www.twitter.com/gatewayabuja" target="blank">
+                                <i class="fa fa-twitter" style="font-size: 48px; color:white; padding-right: 15px"></i>
+                            </a>
+                            <a href="www.instagram.com/gatewayabuja" target="blank">
+                                <i class="fa fa-instagram" style="font-size: 48px; color:white; padding-right: 15px"></i>
+                            </a>
+                    </div>
+                 </div>
+            </div>
+                <div class="footer-copyright grey darken-4 ">
+                    <div class="container center-align grey-text text-lighten-3"> &COPY; 2019 Gateway Computers. All rights reserved.</div>
+                </div>
+        </footer>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+                $('.parallax').parallax();
+                $('.scrollspy').scrollSpy();
+            }); 
+        </script>
+
+    </body>
+</html>
